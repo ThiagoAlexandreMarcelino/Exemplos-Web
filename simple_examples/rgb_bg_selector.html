@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BackGroud</title>
+    </head>
+    <body>
+
+        <input type="range" max="255" min="0" id="r" onchange="{mudaCor()};">
+        <input type="range" max="255" min="0" id="g" onchange="{mudaCor()};">
+        <input type="range" max="255" min="0" id="b" onchange="{mudaCor()};">
+
+
+
+        <script>
+        
+        //document.getElementsByTagName("body")[0].style.background = "linear-gradient(to right,rgba("+r+","+g+","+b+","+1+"))";
+        
+        mudaCor();
+        function  mudaCor() {
+            var r = document.getElementById("r").value;
+            var g = document.getElementById("g").value;
+            var b = document.getElementById("b").value;
+
+            document.getElementsByTagName("body")[0].style.backgroundImage = "linear-gradient(rgba("+r+","+g+","+b+","+1+"))";
+            console.log("rgb("+r+","+g+","+b+")");
+            console.log("linear-gradient(rgba("+r+","+g+","+b+","+1+"))");
+
+            document.getElementsByTagName("body")[0].style.background = "rgb("+r+","+g+","+b+")";
+        }
+
+        </script>
+    </body>
+</html>

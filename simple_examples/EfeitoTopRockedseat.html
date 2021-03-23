@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        body{
+            background-color: rgb(19, 18, 18);
+        }
+
+        .edVUok {
+        position: relative;
+        font-size: 15px;
+        text-align: center;
+        color: rgb(34, 34, 34);
+        cursor: pointer;
+        align-self: center;
+        margin-top: 35px;
+        padding: 15px;
+        background: rgb(247, 223, 30);
+        border-radius: 4px;
+        transition: all 0.3s ease 0s;
+}
+
+.edVUok:hover {
+    color: rgb(255, 255, 255);
+    background: transparent;
+}
+
+.edVUok::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: scale3d(1.06, 1.4, 1);
+    box-shadow: rgb(247, 223, 30) 0px 0px 0px 2px inset;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: inherit;
+    transition: all 0.35s cubic-bezier(0.75, 0, 0.125, 1) 0s;
+}
+.edVUok:hover::after {
+    visibility: visible;
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
+
+
+     
+    </style>
+</head>
+<body>
+
+<!-- <div id="side"></div> -->
+<a href="https://rocketseat.com.br/baseweek-1/inscricao" target="_blank" rel="noopener noreferrer" color="#F7DF1E" class="sc-dxgOiQ edVUok">
+    <strong>Garanta sua vaga</strong> para a próxima turma!</a>
+
+</body>
+</html>

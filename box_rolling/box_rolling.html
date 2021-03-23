@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="externa">
+                                        
+        </div>
+        
+
+        <script>
+
+            function criaElementos() {
+                
+                var size = Math.floor(Math.random(100,200)*100);
+
+                
+                var elemento = document.createElement('div');
+                elemento.setAttribute("class","cubos");
+                
+                //elemento.style.width = `${size}px`;
+                elemento.style.width = size+'px';
+                elemento.style.height = `${size}px`;   
+
+                // elemento.setAttribute("width",size);
+                // elemento.setAttribute("height",size);
+                
+                document.getElementById("externa").appendChild(elemento); 
+                
+            }
+
+            criaElementos();
+            
+
+            //setInterval(criaElementos,2000);
+
+             criaElementos();
+             criaElementos();
+             criaElementos();
+             criaElementos();
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Home
+    </title>
+    <link href="style.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <body>
+
+        <header id="header">
+
+            <nav>
+            <a class="link" href="#1">Home</a>
+            <a class="link" href="#2">Noticias</a>
+            <a class="link" href="#3">Sobre</a>
+            <a class="link" href="#4">Fale Conosco</a>
+            </nav>
+
+        </header>
+        
+        
+
+        <div id="main">
+
+        
+        <div id="1" class="conteudo">
+        <article>
+            <h1>CSS</h1>
+            <p><img src="css_logo.jpg">
+            Cascading Style Sheets (CSS) é um mecanismo para adicionar estilo (cores, fontes, espaçamento, etc.) 
+            a um documento web[1].O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags.Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos. Assim, quando se quiser alterar a aparência dos documentos vinculados a este arquivo CSS, basta modifica-lo[2].
+            Com a variação de atualizações dos navegadores, o suporte ao CSS pode variar. A interpretação dos navegadores pode ser avaliada com o teste Acid2, que se tornou uma forma base de revelar quão eficiente é o suporte de CSS, fazendo com que a nova versão em desenvolvimento do Firefox seja totalmente compatível a ele, assim como o Opera já é. O Doctype informado, ou a ausência dele, 
+            determina o quirks mode ou o strict mode, modificando o modo como o CSS é interpretado e a página desenhada.
+        </p>
+            
+        </article>
+        
+        </div>
+
+        <div id="2" class="conteudo">
+            <article>
+                <h1>Principal</h1>
+                <p>Cascading Style Sheets (CSS) é um mecanismo para adicionar estilo (cores, fontes, espaçamento, etc.) 
+                a um documento web[1].O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags.Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos. Assim, quando se quiser alterar a aparência dos documentos vinculados a este arquivo CSS, basta modifica-lo[2].
+                Com a variação de atualizações dos navegadores, o suporte ao CSS pode variar. A interpretação dos navegadores pode ser avaliada com o teste Acid2, que se tornou uma forma base de revelar quão eficiente é o suporte de CSS, fazendo com que a nova versão em desenvolvimento do Firefox seja totalmente compatível a ele, assim como o Opera já é. O Doctype informado, ou a ausência dele, determina o quirks mode ou o strict mode, modificando o modo como o CSS é interpretado e a página desenhada.</p>
+                
+            </article>
+            
+            </div>
+            <div id="3" class="conteudo">
+                <article>
+                    <h1>Principal</h1>
+                    <p>Cascading Style Sheets (CSS) é um mecanismo para adicionar estilo (cores, fontes, espaçamento, etc.) 
+                    a um documento web[1].O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags.Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos. Assim, quando se quiser alterar a aparência dos documentos vinculados a este arquivo CSS, basta modifica-lo[2].
+                    Com a variação de atualizações dos navegadores, o suporte ao CSS pode variar. A interpretação dos navegadores pode ser avaliada com o teste Acid2, que se tornou uma forma base de revelar quão eficiente é o suporte de CSS, fazendo com que a nova versão em desenvolvimento do Firefox seja totalmente compatível a ele, assim como o Opera já é. O Doctype informado, ou a ausência dele, determina o quirks mode ou o strict mode, modificando o modo como o CSS é interpretado e a página desenhada.</p>
+                    
+                </article>
+                
+             </div>
+             <div id="4" class="conteudo">
+                <article>
+                    <h1>Principal</h1>
+                    <p>Cascading Style Sheets (CSS) é um mecanismo para adicionar estilo (cores, fontes, espaçamento, etc.) 
+                    a um documento web[1].O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags.Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos. Assim, quando se quiser alterar a aparência dos documentos vinculados a este arquivo CSS, basta modifica-lo[2].
+                    Com a variação de atualizações dos navegadores, o suporte ao CSS pode variar. A interpretação dos navegadores pode ser avaliada com o teste Acid2, que se tornou uma forma base de revelar quão eficiente é o suporte de CSS, fazendo com que a nova versão em desenvolvimento do Firefox seja totalmente compatível a ele, assim como o Opera já é. O Doctype informado, ou a ausência dele, determina o quirks mode ou o strict mode, modificando o modo como o CSS é interpretado e a página desenhada.</p>
+                    
+                </article>
+                
+             </div>
+            </div>
+  
+
+        
+        <div id="rodape">
+            <h2>&copy;Thiago Marcelino</h2>
+
+        </div>
+
+        
+
+
+    </body>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function(){
+            var posisaoAtualScroll = window.pageYOffset;
+            var links = document.querySelectorAll('header nav a');
+            var x;
+            
+            if(prevScrollpos > posisaoAtualScroll){
+                document.getElementById('header').style.background = "rgb(0,0,0,0)";
+                
+                for(x = 0; x < links.length;x++ ){
+                    document.querySelectorAll('header nav a')[x].style.color = 'black';
+                }
+                                                
+            }else{
+                
+                document.getElementById('header').style.background = "rgb(0,0,0,1)";
+                
+                //console.log(links);
+
+                
+                for(x = 0; x < links.length;x++ ){
+                    document.querySelectorAll('header nav a')[x].style.color = 'white';
+                }
+
+               }
+
+            prevScrollpos = posisaoAtualScroll;
+        }
+    
+    </script>
+</html>

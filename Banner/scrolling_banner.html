@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: grid;
+            place-items: center;
+            height: 100vh;
+
+        }
+
+        #wrapper{
+            width: 50vw;
+        }
+        
+        #items{
+            display: flex;
+            overflow-x: auto; 
+
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .item{
+            flex: none;
+            width: 100%;
+            height: 500px;
+            
+            scroll-snap-align: start;
+
+            pointer-events: none;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="items">
+            <div class="item"> <img src="img/1.jpg" > </div>
+            <div class="item"> <img src="img/2.jpg" > </div>
+            <div class="item"> <img src="img/5.jpg" > </div>
+            <div class="item"> <img src="img/1.jpg" > </div>
+            <div class="item"> <img src="img/2.jpg" > </div>
+        </div>
+    </div>
+
+    <script>
+        //configurando o scrool
+
+    document.querySelector("#items").addEventListener("wheel" , event => {
+            if(event.deltaY > 0){
+                event.target.scrollBy(300,0)
+            }else{
+                event.target.scrollBy(-300,0)
+            }
+            
+
+        })
+
+    </script>
+    
+</body>
+</html>
