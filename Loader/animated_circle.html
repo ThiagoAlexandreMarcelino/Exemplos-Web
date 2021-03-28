@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    #container{
+        flex: 1;
+        display: flex;
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle-1{
+        border-top: #33ffff 3px solid ;
+        width: 275px;
+        height: 275px;
+        border-radius: 50%;
+        transition: transform 1500ms ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-shadow: 0 0 10px #33ffff,
+                    0 0 20px #33ffff; */
+        
+    }
+
+    .circle-1:hover{
+        animation: circle-1 3s linear alternate infinite;
+        animation-fill-mode: both;
+        
+    }
+
+    @keyframes circle-1{
+        from{transform:rotate(0deg)}
+        to{transform:rotate(360deg)}
+    }
+
+    .circle-2{
+        border-top: #33ffff 3px solid ;
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+        transition: transform 1500ms ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-shadow: 0 0 10px #33ffff,
+                    0 0 20px #33ffff; */
+        
+    }
+
+    .circle-2:hover{
+        animation: circle-1 2s linear alternate infinite;
+        animation-fill-mode: both;
+        
+    }
+
+    @keyframes circle-2{
+        from{transform:rotate(0deg)}
+        to{transform:rotate(-720deg)}
+    }
+
+    /* .circle-3{
+        border-top: #33ffff 3px solid ;
+        width: 265px;
+        height: 265px;
+        border-radius: 50%;
+        transition: transform 2500ms ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-shadow: 0 0 10px #33ffff,
+                    0 0 20px #33ffff; */
+        
+    }
+
+    /* .circle-2:hover{
+        animation: circle-1 1500ms linear alternate infinite;
+        animation-fill-mode: both;
+        
+    } */
+/* 
+    @keyframes circle-2{
+        from{transform:rotate(0deg)}
+        to{transform:rotate(360deg)}
+    } */ */
+
+
+
+
+</style>
+<body>
+    
+    <div id="container">
+        <div class="circle-1">
+            <div class="circle-2">
+                <!-- <div class="circle-3"></div>         -->
+            </div>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
